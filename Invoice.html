@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tender Bill - {TenderId}</title>
+</head>
+<body>
+    <h1>Tender Bill - {TenderId} - {TenderName}</h1>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th colspan="{userGroupLength}">{ColumnHeader}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {MaterialList}
+            <tr>
+                <th>Total</th>
+                {TotalValues}
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
