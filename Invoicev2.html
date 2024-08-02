@@ -5,27 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tender Summary Table</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
+        h4{
+            margin-top: 10px;
+            margin-left: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        th, td {
-            border: 1px solid #ddd;
+        h6{
+            margin-top: 20px;
+            margin-left: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2{
+            margin-top: 50px;
+            padding: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h5{
+            margin-top: 10px;
+            margin-left: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table{
+            padding: 15px;
+            width: 100%
+        }
+        table thead td {
+            background-color: #54585d;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+            border: 1px solid #54585d;
+            padding: 6px;
+        }
+        table tbody td {
+            color: #636363;
+            border: 1px solid #dddfe1;
             padding: 8px;
-            text-align: right;
         }
-        th {
-            background-color: #f2f2f2;
-            text-align: left;
+        table tbody tr {
+            background-color: #f9fafb;
+        }
+        table tbody tr:nth-child(odd) {
+            background-color: #ffffff;
         }
         .total-row {
             font-weight: bold;
         }
-    </style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 40px;
+        }
+        #navbar img {
+            width: 40px;
+            height: 40px;
+        }
 </head>
 <body>
-    <h2>Tender Summary</h2>
+    <nav id="navbar">
+        <img src=
+        "https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="Logo image">
+    </nav>
+    <h2>Consolidated Report</h2>
+    <hr>
+    <h5>Date : {Date}</h5>
+    <h5>Tender Summary</h5>
     <table>
         <thead>
             <tr>
@@ -40,5 +91,8 @@
             </tr>
         </tbody>
     </table>
+    <hr>
+    <h6>Note :<br>
+    1. This report is system generated & merobolee will not be liable for any data discrepancy.</h6>
 </body>
 </html>
