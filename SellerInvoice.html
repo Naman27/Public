@@ -6,12 +6,12 @@
     <title>Invoice</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin: 0;
             padding: 0;
         }
         .container {
-            width: 80%;
+            width: 100%;
             margin: auto;
             padding: 20px;
         }
@@ -32,11 +32,6 @@
             width: 100%;
             border-collapse: collapse;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: right;
-        }
         th {
             background-color: #f2f2f2;
             text-align: left;
@@ -56,11 +51,11 @@
             <h1>Invoice</h1>
         </div>
         <div class='details'>
-            <p>{CompanyName}</p>
-            <p>Pan Number: {PanNumber}</p>
-            <p>{Date}</p>
-            <p>{Position}</p>
-            <p>Total Amount (in words): {TotalAmountInWords}</p>
+            <p><strong>{CompanyName}</strong></p>
+            <p><strong>Pan Number: {PanNumber}</strong></p>
+            <p><strong>{Date}</strong></p>
+            <p><strong>{Position}</strong></p>
+            <p><strong>Total Amount (in words): {TotalAmountInWords}</strong></p>
         </div>
         <table>
             <thead>
