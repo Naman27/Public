@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Invoice</title>
     <style>
         body {
@@ -51,16 +51,16 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
+    <div class='container'>
+        <div class='header'>
             <h1>Invoice</h1>
         </div>
-        <div class="details">
-            <p><strong>Company Name:</strong> {CompanyName}</p>
-            <p><strong>Pan Number:</strong> {PanNumber}</p>
-            <p><strong>Date:</strong> {Date}</p>
-            <p><strong>Final Position:</strong> {Position}</p>
-            <p><strong>Total Amount (in words):</strong> {TotalAmountInWords}</p>
+        <div class='details'>
+            <p><{CompanyName}</p>
+            <p>Pan Number: {PanNumber}</p>
+            <p>{Date}</p>
+            <p>{Position}</p>
+            <p>Total Amount (in words): {TotalAmountInWords}</p>
         </div>
         <table>
             <thead>
@@ -76,14 +76,14 @@
             </thead>
             <tbody>
                 {MaterialList}
-                <tr class="total-row">
-                    <td colspan="5"></td>
+                <tr class='total-row'>
+                    <td colspan='5'></td>
                     <td>Total</td>
                     <td>{TotalAmount}</td>
                 </tr>
             </tbody>
         </table>
-        <div class="footer">
+        <div class='footer'>
             <p>Thank you for your business!</p>
         </div>
     </div>
